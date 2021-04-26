@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Web server to handle pokesearch information requests",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "api",
+    "node",
+    "server",
+    "client",
+    "request",
+    "pokemon",
+    "pokesearch"
+  ],
+  "author": "Rodrigo Bilbao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElBilbao/webapps-pokeserver/issues"
+  },
+  "homepage": "https://github.com/ElBilbao/webapps-pokeserver#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.5"
+  }
+}

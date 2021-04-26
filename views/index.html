@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Cosmetic -->
+    <title>PokeSearch</title>
+    <link rel="icon" href="Media\pokeball.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/header.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 class="display-4">PokeSearch</h1>
+      <p>by Rodrigo Bilbao</p>
+
+      <form id="form">
+        <label for="pname">Pokemon Name:</label>
+        <input type="text" id="pname" name="pname" /><br /><br />
+        <input class="btn btn-primary" type="submit" value="Submit" />
+        <p id="log"></p>
+      </form>
+      <div style="display: inline-flex">
+        <p style="padding-right: 5px; font-weight: bold">Total Weight:</p>
+        <p id="totalWeight">0</p>
+      </div>
+    </div>
+
+    <div class="container" id="pokemonList">
+      <div
+        class="row"
+        id="current"
+        style="
+          text-align: center;
+          text-align: -webkit-center;
+          padding-bottom: 10px;
+        "
+      ></div>
+    </div>
+  </body>
+
+  <!-- JavaScripts-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+  <script src="JS/submitForm.js"></script>
+  <script src="JS/pokeRequest.js"></script>
+  <script src="JS/globals.js"></script>
+</html>
