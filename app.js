@@ -41,6 +41,7 @@ app.get(["/queryForm", "/"], (req, res) => {
 app.get("/pokemon", async (req, res) => {
   const pokeName = req.query.name;
   let pokeCache = await PokeModel.findOne({ name: pokeName });
+  // Check database cache
   if (pokeCache) {
     res.status(200).json(JSON.parse(pokeCache.info));
   } else {

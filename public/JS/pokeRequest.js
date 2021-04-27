@@ -33,8 +33,6 @@ function pokeRequest(name) {
 }
 
 function successfulRequest(name, pokeInfo) {
-  //window.localStorage.setItem(name, pokeInfo); // Local cache
-  pokeStorage.set(name, pokeInfo); // Server cache
   let pokejson = JSON.parse(pokeInfo);
   console.log(pokejson);
 
